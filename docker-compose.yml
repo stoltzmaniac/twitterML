@@ -17,7 +17,7 @@ services:
       MONGODB_PASSWORD: ${MONGODB_PASSWORD}
       MONGODB_HOSTNAME: mongodb
     volumes:
-      - appdata:/var/www
+      - ./app:/var/www
     depends_on:
       - mongodb
     networks:
